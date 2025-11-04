@@ -12,11 +12,13 @@ class ProfilContent {
     var firstname: String
     var lastname: String
     var description: String
+    var contact: Contact
     
     
-    init(firstname: String, lastname: String, description: String) {
+    init(firstname: String, lastname: String, description: String, contact: Contact) {
         self.firstname = firstname
         self.lastname = lastname
         self.description = description
+        self.contact = contact
     }
 }

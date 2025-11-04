@@ -10,3 +10,8 @@ struct Todo: Codable, Identifiable {
     let title: String
     let completed: Bool
 }
+
+struct Contact {
+    let phone: String
+    let email: String
+}

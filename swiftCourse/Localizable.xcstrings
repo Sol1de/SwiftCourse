@@ -1,0 +1,39 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Accueil" : {
+
+    },
+    "Aler au profile" : {
+
+    },
+    "Click me %lld" : {
+
+    },
+    "Description" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "id: %lld" : {
+
+    },
+    "Modifier" : {
+
+    },
+    "profil" : {
+      "extractionState" : "manual"
+    },
+    "Profile" : {
+
+    },
+    "title: %@" : {
+
+    },
+    "Voir les listes" : {
+
+    }
+  },
+  "version" : "1.0"
+}

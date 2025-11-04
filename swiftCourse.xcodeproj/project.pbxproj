@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		70C1A4BE2EBA11FB00C8085D /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 70C1A4BD2EBA11FB00C8085D /* DesignSystem */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		708A58032EB89C3200BC22BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C1A4BE2EBA11FB00C8085D /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				708A57F62EB89C3100BC22BF /* swiftCourse */,
 				708A58052EB89C3200BC22BF /* swiftCourseTests */,
 				708A580F2EB89C3200BC22BF /* swiftCourseUITests */,
+				70C1A4BC2EBA11FB00C8085D /* Frameworks */,
 				708A57F52EB89C3100BC22BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				708A580C2EB89C3200BC22BF /* swiftCourseUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		70C1A4BC2EBA11FB00C8085D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = swiftCourse;
 			packageProductDependencies = (
+				70C1A4BD2EBA11FB00C8085D /* DesignSystem */,
 			);
 			productName = swiftCourse;
 			productReference = 708A57F42EB89C3100BC22BF /* swiftCourse.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 708A57EB2EB89C3100BC22BF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				70C1A4942EBA109000C8085D /* XCLocalSwiftPackageReference "../DesignSystem" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 708A57F52EB89C3100BC22BF /* Products */;
 			projectDirPath = "";
@@ -326,6 +343,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -380,6 +398,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -583,6 +602,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		70C1A4942EBA109000C8085D /* XCLocalSwiftPackageReference "../DesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../DesignSystem;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70C1A4BD2EBA11FB00C8085D /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 708A57EC2EB89C3100BC22BF /* Project object */;
 }
