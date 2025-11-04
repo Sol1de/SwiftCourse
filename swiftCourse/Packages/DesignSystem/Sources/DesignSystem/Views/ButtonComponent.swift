@@ -7,17 +7,19 @@
 
 import SwiftUI
 
-struct ButtonComponent: View {
+public struct ButtonComponent: View {
     let label: String
     let icon: Image?
+    let action: () -> Void
     
-    init(label: String, icon: Image? = nil) {
+    public init(label: String, icon: Image? = nil, action: @escaping () -> Void) {
         self.icon = icon
         self.label = label
+        self.action = action
     }
     
-    var body: some View {
-        Button(action: {}) {
+    public var body: some View {
+        Button(action: action) {
             if (icon != nil) {
                 icon
             }
@@ -35,5 +37,5 @@ struct ButtonComponent: View {
 }
 
 #Preview {
-    ButtonComponent(label: "Hello World", icon: Image(.play))
+    ButtonComponent(label: "Hello World", icon: Image(.play), action: {})
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DesignSystem
 
 struct ContentView: View {
     @State var viewModel = ContentViewModel()
@@ -26,9 +27,10 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-            Button("Click me \(viewModel.counter)"){
+            
+            ButtonComponent(label: "Click me \(viewModel.counter)", icon: Image(.mail), action: {
                 viewModel.counter += 1
-            }
+            })
             
             Spacer()
         }
